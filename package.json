@@ -1,0 +1,36 @@
+{
+  "author": "Dennis Torres <djtorres0@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/psirenny/messageformat-compile-object/issues"
+  },
+  "dependencies": {
+    "jsfy": "^1.4.0",
+    "messageformat": "^0.3.0-1",
+    "traverse": "^0.6.6"
+  },
+  "description": "Compile messageformat.js translation string objects.",
+  "devDependencies": {
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://www.npmjs.com/package/messageformat-compile-object",
+  "keywords": [
+    "compile",
+    "json",
+    "language",
+    "object",
+    "messageformat",
+    "translation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "messageformat-compile-object",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psirenny/messageformat-compile-object.git"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "version": "1.0.0"
+}
