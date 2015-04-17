@@ -24,11 +24,11 @@ test('compile default locale', function (t) {
     t.error(err);
     t.equal(typeof fns, 'function');
     t.equal(typeof fns(), 'object');
-    t.equal(typeof fns().strings.foo.greeting, 'function');
-    t.equal(typeof fns().strings.foo.people, 'function');
-    t.equal(fns().strings.foo.greeting({user: 'dude'}), 'hello dude');
-    t.equal(fns().strings.foo.people({num: 1}), '1 person');
-    t.equal(fns().strings.foo.people({num: 3}), '3 people');
+    t.equal(typeof fns().foo.greeting, 'function');
+    t.equal(typeof fns().foo.people, 'function');
+    t.equal(fns().foo.greeting({user: 'dude'}), 'hello dude');
+    t.equal(fns().foo.people({num: 1}), '1 person');
+    t.equal(fns().foo.people({num: 3}), '3 people');
   });
 });
 
@@ -36,8 +36,8 @@ test('compile custom locale', function (t) {
   t.plan(3);
 
   lib(rb, function (err, fns) {
-    t.equal(fns().strings.foo.greeting({user: 'dude'}), 'welcome dude');
-    t.equal(fns().strings.foo.people({num: 1}), '1 human');
-    t.equal(fns().strings.foo.people({num: 3}), '3 humans');
+    t.equal(fns().foo.greeting({user: 'dude'}), 'welcome dude');
+    t.equal(fns().foo.people({num: 1}), '1 human');
+    t.equal(fns().foo.people({num: 3}), '3 humans');
   });
 });

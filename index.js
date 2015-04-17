@@ -17,7 +17,6 @@ module.exports = function (options, callback) {
     this.update(fn, false);
   });
 
-  build = {strings: build};
   build = jsfy(build);
   build = new Function(mf.runtime.toString() + ' return ' + build);
   callback(null, build);
