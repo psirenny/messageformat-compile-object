@@ -3,6 +3,8 @@ MessageFormat Compile Object
 
 Compile messageformat.js translation string objects.
 
+[![Build Status](https://travis-ci.org/psirenny/messageformat-compile-object.png?branch=master)](https://travis-ci.org/psirenny/messageformat-compile-object)
+
 Installation
 ------------
 
