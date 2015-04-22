@@ -28,7 +28,7 @@ Usage
     };
 
     compile(obj, function (err, fns) {
-      fns().strings.foo.bar(); // "baz!"
+      fns().foo.bar(); // "baz!"
     });
 
 Options
